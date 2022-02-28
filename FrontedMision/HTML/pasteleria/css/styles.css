@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    --colorNav: #C05F99
+    --colorNav: #C05F99;
+    --mainColor: #D67BA6;
 }
 
 a {
@@ -43,8 +44,8 @@ a {
     background-color: #813261;
 }
 
-main {
-    background-color: #D67BA6;
+.main {
+    background-color: var(--mainColor);
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -96,4 +97,42 @@ footer {
 
 .footer-icon {
     font-size: 3rem;
+}
+
+form {
+    background-color: #E088B2;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    margin: 16px 24px;
+    padding: 16px;
+}
+
+.precios {
+    display: flex;
+    align-content: center;
+}
+
+.principal {
+    background-color: var(--mainColor);
+    margin: 0;
+    padding: 16px;
+}
+
+.pastel {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+    justify-items: flex-start;
+}
+
+.precios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+}
+
+input {
+    border-radius: 20px;
+    width: 80%;
+    text-align: center;
 }
