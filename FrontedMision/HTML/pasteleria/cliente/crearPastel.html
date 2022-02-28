@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Crea tu pastel</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo de la empresa">
+            </div>
+            <div class="links">
+                <a href="../index.html">Inicio</a>
+                <a href="./cliente/crearPastel.html">Crear Pastel</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>¡Crea el pastel que quieres!</h1>
+
+        <h2>Sabores................................Precios</h2> 
+        <p>Vainilla...................................$100</p>
+        <p>Chocolate..................................$150</p>
+        <p>Zarzamora..................................$200</p>
+
+        <h2>Adornos.......................................</h2>
+        <p>Chispas de chocolate.......................$50</p>
+        <p>Fresas.....................................$100</p>
+        <p>Chocolate derretido........................$120</p>
+
+        <form action="get">
+            <h3>Complete los datos que se solicitan: </h3>
+
+            <div class="userData">
+                <input type="text" name="name" placeholder="Ingrese su nombre">
+                <input type="tel" name="phoneNumber" placeholder="Ingrese su numero de telefono" pattern="[0-9]{10}">
+                <input type="email" name="email" placeholder="Ingrese su correo">
+            </div>
+            <div class="pastel">
+                <div class="sabor">
+                    <h3>Eliga los sabores que desee: </h3>
+                    <label for="sabores">Vainilla</label>
+                    <input type="checkbox" name="sabores" value="vainilla">
+                    <label for="sabores">Chocolate</label>
+                    <input type="checkbox" name="sabores" value="chocolate">
+                    <label for="sabores">Zarzamora</label>
+                    <input type="checkbox" name="sabores"value="zarzamora">
+                </div>
+    
+                <div class="adorno">
+                    <h3>Eliga los adornos que guste: </h3>
+                    <label for="adornos">Vainilla</label>
+                    <input type="checkbox" name="adornos"value="chispasCho">
+                    <label for="adornos">Chocolate</label>
+                    <input type="checkbox" name="adornos"value="fresas">
+                    <label for="adornos">Zarzamora</label>
+                    <input type="checkbox" name="adornos"value="chocolateDerretido">
+                </div>
+
+                <textarea name="descripcion" cols="30" rows="10" placeholder="Describe tu pastel"></textarea>
+            </div>
+            
+
+
+            <input type="submit" value="Crear">
+        </form>
+    </main>
+
+    <footer>
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+
+        <p>Horarios de atención</p>
+        <p>8:00 am - 8:00 pm</p>
+        <p>Telefóno</p>
+        <p>232-455-9656</p>
+        <p>Dirección</p>
+        <p>Calle principal No. 768 Colonia San Miguel, Puebla, Puebla</p>
+    </footer>
+</body>
+</html>
